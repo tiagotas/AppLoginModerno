@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLoginModerno.App">
+    
+    <Application.Resources>
+
+        <Style TargetType="Frame">
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Purple" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="TextTransform" Value="Uppercase" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="Padding" Value="0, 15, 0, 0" />
+        </Style>
+
+    </Application.Resources>
+    
+</Application>

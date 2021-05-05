@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLoginModerno.Protegido"
+             Padding="10">
+
+    <ContentPage.Background>
+        <LinearGradientBrush  StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="Purple" Offset="0.3" />
+            <GradientStop Color="red" Offset="1.1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame>
+                <StackLayout>
+                    <Label Text="Área Protegida" FontSize="Large" />
+                    <Label Text="Bem-vindo Fulano" />
+                    <Button Text="Sair" 
+                            Margin="15" 
+                            Clicked="Button_Clicked" />
+                </StackLayout>                
+            </Frame>          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
