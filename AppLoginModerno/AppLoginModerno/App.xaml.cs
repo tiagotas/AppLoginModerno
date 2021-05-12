@@ -10,7 +10,12 @@ namespace AppLoginModerno
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            if(Properties.ContainsKey("usuario_logado"))
+            {
+                MainPage = new Protegido();
+
+            } else
+                MainPage = new Login();
         }
 
         protected override void OnStart()

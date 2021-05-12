@@ -16,8 +16,8 @@
             <Frame>
                 <StackLayout>
                     <Label Text="Área Protegida" FontSize="Large" />
-                    <Label Text="Bem-vindo Fulano" />
-                    <Button Text="Sair" 
+                    <Label x:Name="lbl_boasvindas" />
+                    <Button Text="Desconectar" 
                             Margin="15" 
                             Clicked="Button_Clicked" />
                 </StackLayout>                

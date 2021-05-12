@@ -15,6 +15,11 @@ namespace AppLoginModerno
         public Protegido()
         {
             InitializeComponent();
+
+            lbl_boasvindas.Text = string.Format(
+                "Bem-vindo (a) {0} ",
+                App.Current.Properties["usuario_logado"].ToString()
+            );
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -22,7 +27,12 @@ namespace AppLoginModerno
             bool confirmacao = await DisplayAlert("Tem certeza?", "Sair do App?", "Sim", "Não");
 
             if(confirmacao)
+            {
+                App.Current.Properties.Remove("usuario_logado");
+
                 App.Current.MainPage = new Login();
+            }
+               
         }
     }
 }
